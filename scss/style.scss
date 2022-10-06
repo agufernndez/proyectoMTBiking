@@ -126,6 +126,7 @@ main {
     }
 
     .mainContenido {
+        margin-top: 70px;
         
         article {
             width: 80vw;
@@ -191,4 +192,59 @@ main {
         }
     }
     
+}
+
+footer {
+    display: flex;
+    justify-content: space-around;
+    padding: 15px;
+    margin: 15px;
+    // margin-top: 20px;
+    // padding-top: 20px;
+    font-size: 0.5rem;
+    border-top: 1px solid rgba(255, 255, 255, 0.1) ;
+    // color:;
+   
+
+    .footerSection1 {
+        width: 50vw;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+        h2 {
+            font-family: $AB;
+        }
+
+        p {
+            font-size: 0.3rem;
+            width: 35vw;
+            padding-top: 10px;
+        }
+
+        p:nth-child(1) {
+            opacity: 0.5;
+        }
+    }
+
+    .footerSection2 {
+        h3 {
+            font-size: 0.5rem;
+            color: $amarillo
+        }
+
+        ul {
+            list-style: none;
+
+            li {
+                padding-top: 8px;
+                
+                a {
+                    color: $blanco;
+                    text-decoration: none;
+                    font-size: 0.3rem;
+                }
+            }
+        }
+    }
 }
