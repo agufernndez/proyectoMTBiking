@@ -44,6 +44,23 @@ header {
       color: #FFFFFF;
       font-size: 0.5rem; }
 
+@media screen and (min-width: 768px) {
+  header {
+    padding-top: 30px; }
+    header .headerLogo {
+      font-size: 1.8rem; }
+      header .headerLogo :nth-child(2) {
+        padding-left: 55px; }
+    header .headerNav .headerNav__ul li {
+      padding: 30px; }
+      header .headerNav .headerNav__ul li a {
+        font-size: 0.8rem; }
+    header .headerAccount img {
+      width: 35px;
+      padding-right: 10px; }
+    header .headerAccount a {
+      font-size: 1rem; } }
+
 * {
   margin: 0;
   padding: 0;
@@ -127,7 +144,7 @@ main {
     background: linear-gradient(180deg, rgba(11, 29, 38, 0) 0%, #0B1D26 61.38%);
     z-index: -1; }
   main .mainContenido {
-    margin-top: 70px; }
+    margin-top: 30px; }
     main .mainContenido article {
       width: 80vw;
       margin: 0 auto; }
@@ -199,3 +216,70 @@ footer {
         color: #FFFFFF;
         text-decoration: none;
         font-size: 0.3rem; }
+
+@media screen and (min-width: 768px) {
+  main .mainPincipal {
+    height: 55vh;
+    padding: 100px 0 0;
+    justify-content: space-around; }
+    main .mainPincipal .mainPrincipal__social {
+      height: 200px; }
+      main .mainPincipal .mainPrincipal__social p {
+        font-size: 0.8rem; }
+      main .mainPincipal .mainPrincipal__social ul img {
+        width: 20px; }
+    main .mainPincipal .mainPrincipal__titulo .divh3 div {
+      width: 44px;
+      height: 2px;
+      margin-right: 10px; }
+    main .mainPincipal .mainPrincipal__titulo .divh3 h3 {
+      text-transform: uppercase;
+      font-size: 1rem; }
+    main .mainPincipal .mainPrincipal__titulo h1 {
+      padding-bottom: 20px;
+      font-size: 3rem; }
+    main .mainPincipal .mainPrincipal__titulo p {
+      font-size: 0.8rem;
+      display: flex;
+      align-items: center; }
+      main .mainPincipal .mainPrincipal__titulo p span img {
+        height: 16px;
+        padding-left: 12px; }
+    main .mainPincipal .mainPrincipal__indice {
+      padding-top: 20px; }
+      main .mainPincipal .mainPrincipal__indice p {
+        font-size: 1rem; }
+      main .mainPincipal .mainPrincipal__indice ul li {
+        padding-top: 8px; }
+      main .mainPincipal .mainPrincipal__indice ul a {
+        font-size: 0.8rem; }
+  main .sombra {
+    top: 550px;
+    width: 100vw;
+    height: 190px;
+    background: linear-gradient(180deg, rgba(11, 29, 38, 0) 0%, #0B1D26 61.38%);
+    z-index: -1; }
+  main .mainContenido :nth-child(2) {
+    flex-direction: row-reverse; }
+  main .mainContenido article {
+    margin-top: 40px;
+    display: flex;
+    align-items: center; }
+    main .mainContenido article .articleDiv {
+      bottom: 0px; }
+      main .mainContenido article .articleDiv .divh3 div {
+        width: 40px; }
+      main .mainContenido article .articleDiv .divh3 h3 {
+        font-size: 0.8rem; }
+      main .mainContenido article .articleDiv h2 {
+        padding-bottom: 25px;
+        font-size: 1.7rem;
+        text-transform: capitalize; }
+      main .mainContenido article .articleDiv p {
+        width: 80px;
+        font-size: 0.6rem;
+        padding-top: 12px; }
+        main .mainContenido article .articleDiv p span img {
+          height: 12px; }
+    main .mainContenido article figure img {
+      width: 40vw; } }

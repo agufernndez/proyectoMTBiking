@@ -11,6 +11,7 @@ body {
     font-size: 62.5%;
     background-color: $oscuro;
 }
+
 header {
     // position: relative;
     display: flex;
@@ -72,4 +73,47 @@ header {
 
     }
 
+}
+
+@media screen and (min-width: 768px) {
+    header {
+        padding-top: 30px;
+
+        .headerLogo {
+            font-size: 1.8rem;
+            
+            :nth-child(2){
+                padding-left: 55px;
+            }
+        }
+    
+        .headerNav {
+            .headerNav__ul {    
+                li{
+                    padding: 30px;
+
+                    a {
+                        font-size: 0.8rem;
+                    }
+                }
+                }
+        }
+    
+        .headerAccount {    
+            img {
+                width: 35px;
+                padding-right: 10px;
+
+            }
+    
+            a {
+                font-size: 1rem;
+            }
+    
+        }
+
+    }
+
+
+    
 }
