@@ -75,7 +75,7 @@ body {
 main {
   width: 100vw; }
   main .mainPincipal {
-    height: 25vh;
+    height: 40vh;
     width: 100vw;
     display: flex;
     justify-content: space-between;
@@ -136,54 +136,45 @@ main {
           color: #FFFFFF;
           text-decoration: none;
           font-size: 0.5rem; }
-  main .sombra {
-    position: absolute;
-    top: 180px;
-    width: 100vw;
-    height: 190px;
-    background: linear-gradient(180deg, rgba(11, 29, 38, 0) 0%, #0B1D26 61.38%);
-    z-index: -1; }
-  main .mainContenido {
-    margin-top: 30px; }
-    main .mainContenido article {
-      width: 80vw;
-      margin: 0 auto; }
-      main .mainContenido article .articleDiv {
-        padding: 0 30px;
-        position: relative;
-        bottom: -70px;
-        background: radial-gradient(circle farthest-corner at center center, #0b1d26 0%, rgba(11, 29, 38, 0) 80%); }
-        main .mainContenido article .articleDiv .divh3 {
-          display: flex;
-          align-items: center; }
-          main .mainContenido article .articleDiv .divh3 div {
-            width: 22px;
-            height: 1px;
-            margin-right: 5px;
-            background-color: #FBD784; }
-          main .mainContenido article .articleDiv .divh3 h3 {
-            font-weight: 700;
-            color: #FBD784;
-            text-transform: uppercase;
-            font-size: 0.5rem; }
-        main .mainContenido article .articleDiv h2 {
-          padding-bottom: 15px;
-          font-family: "Playfair Display", serif;
-          font-size: 1.2rem;
-          text-transform: capitalize; }
-        main .mainContenido article .articleDiv p {
-          width: 55px;
-          display: flex;
-          align-items: center;
-          justify-content: space-between;
-          font-weight: 600;
-          font-size: 0.4rem;
+  main .mainContenido article {
+    width: 80vw;
+    margin: 0 auto; }
+    main .mainContenido article .articleDiv {
+      padding: 0 30px 25px;
+      position: relative;
+      background: radial-gradient(circle farthest-corner at center center, #0b1d26 0%, rgba(11, 29, 38, 0) 80%); }
+      main .mainContenido article .articleDiv .divh3 {
+        display: flex;
+        align-items: center; }
+        main .mainContenido article .articleDiv .divh3 div {
+          width: 22px;
+          height: 1px;
+          margin-right: 5px;
+          background-color: #FBD784; }
+        main .mainContenido article .articleDiv .divh3 h3 {
+          font-weight: 700;
           color: #FBD784;
-          padding-top: 10px; }
-          main .mainContenido article .articleDiv p span img {
-            height: 8px; }
-      main .mainContenido article figure img {
-        width: 80vw; }
+          text-transform: uppercase;
+          font-size: 0.5rem; }
+      main .mainContenido article .articleDiv h2 {
+        padding-bottom: 15px;
+        font-family: "Playfair Display", serif;
+        font-size: 1.2rem;
+        text-transform: capitalize; }
+      main .mainContenido article .articleDiv p {
+        width: 55px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        font-weight: 600;
+        font-size: 0.4rem;
+        color: #FBD784;
+        padding-top: 10px; }
+        main .mainContenido article .articleDiv p span img {
+          height: 8px; }
+    main .mainContenido article figure img {
+      width: 80vw;
+      margin-bottom: 70px; }
 
 footer {
   display: flex;
@@ -217,10 +208,19 @@ footer {
         text-decoration: none;
         font-size: 0.3rem; }
 
+@media screen and (min-width: 440px) {
+  main .mainContenido {
+    margin-top: 20vh; }
+    main .mainContenido .mainPincipal {
+      height: 60vh; } }
+
+@media screen and (min-width: 440px) and (min-width: 510px) {
+  main .mainContenido {
+    margin-top: 20vh; } }
+
 @media screen and (min-width: 768px) {
   main .mainPincipal {
-    height: 55vh;
-    padding: 100px 0 0;
+    height: 45vh;
     justify-content: space-around; }
     main .mainPincipal .mainPrincipal__social {
       height: 200px; }
@@ -253,33 +253,95 @@ footer {
         padding-top: 8px; }
       main .mainPincipal .mainPrincipal__indice ul a {
         font-size: 0.8rem; }
-  main .sombra {
-    top: 550px;
-    width: 100vw;
-    height: 190px;
-    background: linear-gradient(180deg, rgba(11, 29, 38, 0) 0%, #0B1D26 61.38%);
-    z-index: -1; }
-  main .mainContenido :nth-child(2) {
-    flex-direction: row-reverse; }
-  main .mainContenido article {
-    margin-top: 40px;
-    display: flex;
-    align-items: center; }
-    main .mainContenido article .articleDiv {
-      bottom: 0px; }
-      main .mainContenido article .articleDiv .divh3 div {
-        width: 40px; }
-      main .mainContenido article .articleDiv .divh3 h3 {
-        font-size: 0.8rem; }
-      main .mainContenido article .articleDiv h2 {
-        padding-bottom: 25px;
-        font-size: 1.7rem;
-        text-transform: capitalize; }
-      main .mainContenido article .articleDiv p {
-        width: 80px;
-        font-size: 0.6rem;
-        padding-top: 12px; }
-        main .mainContenido article .articleDiv p span img {
-          height: 12px; }
-    main .mainContenido article figure img {
-      width: 40vw; } }
+  main .mainContenido {
+    margin-top: 12vh; }
+    main .mainContenido :nth-child(2) {
+      flex-direction: row-reverse; }
+    main .mainContenido article {
+      max-width: 700px;
+      margin-top: 40px;
+      display: flex;
+      align-items: center; }
+      main .mainContenido article .articleDiv {
+        bottom: 0px; }
+        main .mainContenido article .articleDiv .divh3 div {
+          width: 40px; }
+        main .mainContenido article .articleDiv .divh3 h3 {
+          font-size: 0.8rem; }
+        main .mainContenido article .articleDiv h2 {
+          padding-bottom: 25px;
+          font-size: 1.7rem;
+          text-transform: capitalize; }
+        main .mainContenido article .articleDiv p {
+          width: 80px;
+          font-size: 0.6rem;
+          padding-top: 12px; }
+          main .mainContenido article .articleDiv p span img {
+            height: 12px; }
+      main .mainContenido article figure img {
+        width: 40vw;
+        max-width: 350px; } }
+
+@media screen and (min-width: 1024px) {
+  main .mainPincipal {
+    height: 60vh;
+    width: 100vw; }
+    main .mainPincipal .mainPrincipal__social {
+      height: 200px;
+      padding-top: 10px; }
+      main .mainPincipal .mainPrincipal__social p {
+        font-size: 1rem; }
+      main .mainPincipal .mainPrincipal__social ul img {
+        width: 20px; }
+    main .mainPincipal .mainPrincipal__titulo .divh3 div {
+      width: 22px;
+      height: 1px;
+      margin-right: 5px;
+      background-color: #0B1D26; }
+    main .mainPincipal .mainPrincipal__titulo .divh3 h3 {
+      font-size: 1rem; }
+    main .mainPincipal .mainPrincipal__titulo h1 {
+      font-size: 2.8rem; }
+    main .mainPincipal .mainPrincipal__titulo p {
+      font-weight: 600;
+      font-size: 0.8rem; }
+      main .mainPincipal .mainPrincipal__titulo p span img {
+        height: 16px; }
+    main .mainPincipal .mainPrincipal__indice {
+      padding: 15px 10px 0 0; }
+      main .mainPincipal .mainPrincipal__indice p {
+        font-size: 1rem; }
+      main .mainPincipal .mainPrincipal__indice ul a {
+        font-size: 1rem; }
+  main .mainContenido {
+    margin-top: 75vh; }
+    main .mainContenido article {
+      width: 90vw;
+      margin: 100px auto; }
+      main .mainContenido article .articleDiv {
+        padding-bottom: 50px; }
+        main .mainContenido article .articleDiv .divh3 div {
+          width: 40px;
+          margin-right: 10px; }
+        main .mainContenido article .articleDiv .divh3 h3 {
+          font-size: 0.8rem; }
+        main .mainContenido article .articleDiv h2 {
+          font-size: 2rem; }
+        main .mainContenido article .articleDiv h4 {
+          font-size: 0.8rem; }
+        main .mainContenido article .articleDiv p {
+          width: 100px;
+          font-size: 0.8rem; }
+          main .mainContenido article .articleDiv p span img {
+            height: 12px; }
+      main .mainContenido article figure img {
+        width: 80vw;
+        margin-bottom: 0px; }
+  footer {
+    font-size: 1rem; }
+    footer .footerSection1 p {
+      font-size: 0.6rem; }
+    footer .footerSection2 h3 {
+      font-size: 0.8rem; }
+    footer .footerSection2 ul li a {
+      font-size: 0.6rem; } }
